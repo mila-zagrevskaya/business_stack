@@ -1,0 +1,64 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["react-app", "airbnb"],
+  "plugins": ["@typescript-eslint", "react", "prettier", "react-hooks"],
+  "env": {
+    "es6": true,
+    "node": true,
+    "browser": true,
+    "jest": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "tsx": true
+    }
+  },
+  "rules": {
+    "arrow-parens": 0,
+    "jsx-a11y/label-has-associated-control": 0,
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/label-has-for": 0,
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx", ".tsx"]
+      }
+    ],
+    "import/prefer-default-export": "off",
+    "no-console": [
+      2,
+      {
+        "allow": ["error"]
+      }
+    ],
+    "no-param-reassign": [
+      0,
+      {
+        "props": false
+      }
+    ],
+    "react/destructuring-assignment": 0,
+    "no-multiple-empty-lines": [
+      2,
+      {
+        "max": 1
+      }
+    ],
+    "linebreak-style": 0,
+    "comma-dangle": ["error", "never"],
+    "max-len": [1, 120, 2],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"],
+        "moduleDirectory": ["node_modules", "src/"]
+      }
+    }
+  }
+}
